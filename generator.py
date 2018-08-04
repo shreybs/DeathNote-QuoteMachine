@@ -161,7 +161,8 @@ class Generator:
 
 root = Tk()
 
-root.wm_iconbitmap('favicon.ico')
+if(platform.system()=='Windows'):
+    root.wm_iconbitmap('favicon.ico')
 
 if(platform.system()=='Windows'):
     winsound.PlaySound('death_music.wav', winsound.SND_LOOP + winsound.SND_ASYNC)
